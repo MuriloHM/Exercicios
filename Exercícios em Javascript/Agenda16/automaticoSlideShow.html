@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Slide Show TOP</title>
+</head>
+<body>
+    <h2 class="w3-center">SlideShow Automatico</h2>
+    <div class="w3-content w3-section w3-center" style="max-width: 500px;"> 
+        <img class="slide" src="IMG/Chihiro 2.png" style="width:100%">
+        <img class="slide" src="IMG/Chihiro 3.png" style="width:100%">
+        <img class="slide" src="IMG/Chihiro 4.png" style="width:100%">
+        <img class="slide" src="IMG/Chihiro 5.png" style="width:100%">
+    </div>
+</body>
+<script>
+    var index=0;
+    carousel();
+
+    function carousel(){
+        var i;
+        var x = document.getElementsByClassName("slide");
+        
+        for (i = 0; i<x.length; i++){
+            x[i].style.display="none";
+        }
+        index++;
+        if(index>x.length){index = 1}
+        x[index-1].style.display="block";
+        setTimeout(carousel,2000);//Imagem trocada a cada 2 segundos
+    }
+</script>
+</html>
