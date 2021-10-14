@@ -1,0 +1,52 @@
+body{
+    background-color:rgb(58, 58, 58);
+}
+
+.principal{
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+}
+.coluna1, .coluna2, .coluna3, .coluna4, .coluna5{
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+        
+}
+
+.coluna1{
+    flex-grow: 1;
+    
+}
+.coluna2{
+    flex-grow: 1;
+    
+}
+.colna3{
+    flex-grow: 2;
+    
+}
+coluna4{
+    flex-grow: 1;
+    
+}
+.coluna5{
+    flex-grow: 1;
+    
+}
+img{
+    width: 100%;
+    margin: 1.5%;
+
+}
+a:link, a:visited{
+    color:rgb(138, 124, 62);
+}
+h1{
+    text-align: center;
+    font-size:4.5em;
+    color: rgb(207, 191, 98);
+}
+h2{
+    color: rgb(221, 212, 161);
+}
